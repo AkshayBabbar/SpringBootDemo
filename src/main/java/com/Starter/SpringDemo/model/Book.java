@@ -33,6 +33,7 @@ public class Book {
         this.publisher = publisher;
         this.authors = authors;
     }
+
     public Book(Long id, String title, String isbn, Publisher publisher, Set<Author> authors) {
         this.id = id;
         this.title = title;
