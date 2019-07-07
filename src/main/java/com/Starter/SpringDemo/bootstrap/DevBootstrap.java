@@ -28,7 +28,8 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
     }
 
     private void initData(){
-        Publisher harperCollins = new Publisher("Harper Collins");
+        Publisher harperCollins = new Publisher();
+        harperCollins.setName("Harper Collins");
         publisherRepository.save(harperCollins);
 
         Publisher worx = new Publisher("Worx");
